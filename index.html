@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quran Dua Info - Privacy and Support</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    .wrap {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 16px;
+    }
+    .card {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .head {
+      padding: 20px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .head h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    .tabs {
+      display: flex;
+      gap: 8px;
+      padding: 12px 20px;
+      border-bottom: 1px solid #e5e7eb;
+      background: #f9fafb;
+    }
+    .tab-btn {
+      border: 1px solid #d1d5db;
+      background: #ffffff;
+      padding: 10px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .tab-btn.active {
+      background: #111827;
+      color: #ffffff;
+      border-color: #111827;
+    }
+    .tab-content {
+      display: none;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="head">
+        <h1>Quran Dua Info</h1>
+        <p>Official Privacy Policy and Support page.</p>
+      </div>
+
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="privacy" type="button">Privacy Policy</button>
+        <button class="tab-btn" data-tab="support" type="button">Support</button>
+      </div>
+
+      <section id="privacy" class="tab-content active">
+        <h2>Privacy Policy</h2>
+        <p>We respect your privacy and only use data needed to provide and improve the app experience.</p>
+        <p>We do not sell personal information. If analytics or crash tools are used, they are used only for performance and stability improvements.</p>
+        <p>For privacy questions, contact: <a href="mailto:mdyousufsheikh.official@gmail.com">mdyousufsheikh.official@gmail.com</a>.</p>
+      </section>
+
+      <section id="support" class="tab-content">
+        <h2>Support</h2>
+        <p>If you need any help, please contact us:</p>
+        <ul>
+          <li>Email: <a href="mailto:mdyousufsheikh.official@gmail.com">mdyousufsheikh.official@gmail.com</a></li>
+          <li>Phone: <a href="tel:+8800000000000">+8800000000000</a></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll(".tab-btn");
+    const sections = document.querySelectorAll(".tab-content");
+
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const target = btn.dataset.tab;
+        buttons.forEach((b) => b.classList.remove("active"));
+        sections.forEach((s) => s.classList.remove("active"));
+        btn.classList.add("active");
+        document.getElementById(target).classList.add("active");
+        history.replaceState(null, "", "#" + target);
+      });
+    });
+
+    const hash = window.location.hash.replace("#", "");
+    if (hash === "privacy" || hash === "support") {
+      document.querySelector('[data-tab="' + hash + '"]').click();
+    }
+  </script>
+</body>
+</html>
