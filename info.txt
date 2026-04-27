@@ -1,0 +1,49 @@
+update this info > Privacy Policy for Quran & Zikr
+Effective Date: March 30, 2026
+Quran & Zikr (“the App”, “we”, “our”, or “us”) is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our App.
+
+1. Information We Collect
+We aim to keep data collection minimal.
+Location Data (Optional):
+The App may request access to your device location to provide accurate prayer times based on your area.
+Personal Information:
+We do not require account registration and do not intentionally collect personal information such as your name, email address, or phone number within the App.
+
+2. How We Use Information
+Any information used by the App is strictly for core functionality, including:
+Calculating accurate prayer times
+Displaying relevant location information
+Maintaining app performance and fixing technical issues
+
+3. Location Permission
+Location access is optional.
+Some features, such as prayer times based on your current location, may not function properly without it.
+You can enable or disable location permissions at any time through your device settings.
+
+4. Data Sharing and Storage
+We do not sell, trade, or rent your personal information.
+We do not share your personal information with third parties for advertising purposes.
+Location data is used only within the App to provide core features.
+
+5. Third-Party Services
+The App may use system-level services or libraries (such as device location services) to function properly. These services may handle limited technical data according to their own privacy policies.
+
+6. Children’s Privacy
+The App does not knowingly collect personal information from children. If you believe that a child has provided personal data, please contact us so we can take appropriate action.
+
+7. Data Security
+We take reasonable measures to protect your information. However, no method of data transmission or storage is completely secure.
+
+8. Your Choices
+You have full control over your data:
+You can disable location access at any time
+You can stop using the App whenever you choose
+
+9. Changes to This Privacy Policy
+We may update this Privacy Policy from time to time. Any changes will be reflected by updating the effective date above.
+
+10. Contact Us
+If you have any questions or concerns about this Privacy Policy, you can contact us at:
+Email: obaid.sohail66@gmail.com
+
+By using Quran & Zikr, you agree to this Privacy Policy.
